@@ -18,3 +18,11 @@ h5,
 h6 {
   font-family: "Lato", sans-serif;
 }
+
+.detail {
+  text-align: center;
+}
+
+.detail img {
+  width: 100%;
+}
