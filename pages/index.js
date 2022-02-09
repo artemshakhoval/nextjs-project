@@ -1,6 +1,5 @@
 import React from "react";
 import MeetupList from "../components/meetups/MeetupList";
-import Layout from "../components/layout/Layout";
 
 const DUMMY_MEETUPS = [
   {
@@ -8,7 +7,7 @@ const DUMMY_MEETUPS = [
     title: "A First Meetup",
     image:
       "https://img.theculturetrip.com/768x/smart/wp-content/uploads/2019/09/c267j3-2.jpg",
-    address: "Barcelona, 24055, Some street",
+    address: "Barcelona, 24055, Rambla street",
     description: "A First Meetup place",
   },
   {
@@ -16,7 +15,7 @@ const DUMMY_MEETUPS = [
     title: "A Second Meetup",
     image:
       "https://img.theculturetrip.com/768x/smart/wp-content/uploads/2015/12/15040570004_d78f0f11d2_z.jpg",
-    address: "Barcelona, 24055, Some street",
+    address: "Barcelona, 24055, Sagrada street",
     description: "A Second Meetup place",
   },
   {
@@ -24,17 +23,13 @@ const DUMMY_MEETUPS = [
     title: "A Third Meetup",
     image:
       "https://img.theculturetrip.com/768x/smart/wp-content/uploads/2019/09/c267j3-2.jpg",
-    address: "Barcelona, 24055, Some street",
+    address: "Barcelona, 24055, Columb street",
     description: "A Third Meetup place",
   },
 ];
 
 const HomePage = () => {
-  return (
-    <Layout>
-      <MeetupList meetups={DUMMY_MEETUPS} />
-    </Layout>
-  );
+  return <MeetupList meetups={DUMMY_MEETUPS} />;
 };
 
 export default HomePage;
